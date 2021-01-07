@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>PersamaanKuadrat</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width , initial-scale = 1">
+	<link rel="stylesheet" type="text/css"
+	media="all" href="style.css">
+
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+</head>
+<body>
+	<div id="layout">
+		<div id="runningtext">
+			<marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+			Welcome to Problem Solver :)
+			</marquee>
+		</div>
+		<div id="isi">
+			<div class="isiposting">
+				<h2>Menghitung Sistem Persamaan Kuadrat</h2>
+				<div class="inputan">
+					<label>Nilai a: </label><br>
+					<input type="text" id="nilaia"  /><br>
+					<label>Nilai b: </label><br>
+					<input type="text" id="nilaib"  /><br>
+					<label>Nilai c: </label><br>
+					<input type="text" id="nilaic"  /><br><br>
+				</div>
+				<div class="tombol">
+					<button type="button" id="tombol">Calculate!</button>
+				</div>
+				<p id="det"></p>
+				<p id="akar"></p>
+
+			</div>
+		</div>
+	</div>
+
+		<script src="PersamaanKuadrat.js"></script>
+		<script type="text/javascript" src="database.js"></script>
+		<script type="text/javascript" src="inputdata.js"></script>
+
+
+</body>
+
+
+
+</html>
